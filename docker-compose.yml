@@ -1,0 +1,22 @@
+# PostgreSQL local para desarrollo. Puerto 55433 para no chocar con otros proyectos.
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: claro-one-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: claro
+      POSTGRES_PASSWORD: claro
+      POSTGRES_DB: claro_one
+    ports:
+      - "55433:5432"
+    volumes:
+      - claro-one-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U claro -d claro_one"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  claro-one-db:

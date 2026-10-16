@@ -1,0 +1,1 @@
+ALTER TABLE "baselines" ADD COLUMN "subregion" text;

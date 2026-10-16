@@ -1,0 +1,43 @@
+{
+  "name": "claro-one-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Claro One: CRM + ERP de la FMO y sus agencias internas. Next.js + PostgreSQL sobre @arc2-0/claro-one-kit.",
+  "scripts": {
+    "dev": "next dev -p 3100",
+    "build": "next build",
+    "start": "next start -p 3100",
+    "typecheck": "tsc --noEmit",
+    "db:up": "docker compose up -d db",
+    "db:down": "docker compose down",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "db:bootstrap": "tsx --env-file=.env.local src/server/db/bootstrap.ts",
+    "db:seed": "tsx --env-file=.env.local src/server/db/seed.ts"
+  },
+  "dependencies": {
+    "@ant-design/nextjs-registry": "^1.3.0",
+    "@arc2-0/claro-one-kit": "^2.6.0",
+    "antd": "^6.6.6",
+    "better-auth": "^1.7.7",
+    "dayjs": "^1.11.23",
+    "drizzle-orm": "^0.45.4",
+    "lucide-react": "^1.56.0",
+    "next": "16.4.0",
+    "postgres": "^3.4.9",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "drizzle-kit": "^0.31.11",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "packageManager": "pnpm@11.5.1"
+}

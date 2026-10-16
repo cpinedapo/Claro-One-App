@@ -1,0 +1,8 @@
+ALTER TABLE "agencies" DROP CONSTRAINT "agencies_paid_to";--> statement-breakpoint
+ALTER TABLE "agents" ADD COLUMN "payment_code_claro" text;--> statement-breakpoint
+ALTER TABLE "agents" ADD COLUMN "payment_code_atoz" text;--> statement-breakpoint
+ALTER TABLE "discount_sellers" ADD COLUMN "payment_code_claro" text;--> statement-breakpoint
+ALTER TABLE "discount_sellers" ADD COLUMN "payment_code_atoz" text;--> statement-breakpoint
+ALTER TABLE "agencies" ADD CONSTRAINT "agencies_paid_to" CHECK (("agencies"."commission_paid_to" IS NULL OR "agencies"."commission_paid_to" IN ('agencia', 'subagencia', 'agente')) AND ("agencies"."bonus_paid_to" IS NULL OR "agencies"."bonus_paid_to" IN ('agencia', 'subagencia', 'agente')));--> statement-breakpoint
+ALTER TABLE "agents" ADD CONSTRAINT "agents_payment_code_compania" CHECK (("agents"."payment_code_claro" IS NULL OR 'claro' = ANY("agents"."internal_companies")) AND ("agents"."payment_code_atoz" IS NULL OR 'atoz' = ANY("agents"."internal_companies")));--> statement-breakpoint
+ALTER TABLE "discount_sellers" ADD CONSTRAINT "discount_sellers_payment_code" CHECK (("discount_sellers"."agent_id" IS NULL OR ("discount_sellers"."payment_code_claro" IS NULL AND "discount_sellers"."payment_code_atoz" IS NULL)) AND ("discount_sellers"."payment_code_claro" IS NULL OR 'claro' = ANY("discount_sellers"."internal_companies")) AND ("discount_sellers"."payment_code_atoz" IS NULL OR 'atoz' = ANY("discount_sellers"."internal_companies")));

@@ -1,0 +1,1 @@
+ALTER TABLE "empleado" ADD COLUMN "valid_to" date;

@@ -1,0 +1,223 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1791907032495,
+      "tag": "0000_inicial",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791911795714,
+      "tag": "0001_directorio-quita-agente",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791911799863,
+      "tag": "0002_directorio-persona-vinculo",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1791916353485,
+      "tag": "0003_directorio-quita-modelo-anterior",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1791916428963,
+      "tag": "0004_directorio-agencias",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1791916430328,
+      "tag": "0005_agency-tree-trigger",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1791918128827,
+      "tag": "0006_interactions",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1791919663111,
+      "tag": "0007_agencia-direccion-equipo-lobs-labels",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1791919676757,
+      "tag": "0008_agency-work-team-roles",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1791921266635,
+      "tag": "0009_baselines",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1791922531502,
+      "tag": "0010_equipo-trabajo-tres-roles",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1791922744608,
+      "tag": "0011_baselines-cargos",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1791922810693,
+      "tag": "0012_cargos-manager-c-level",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1791923259757,
+      "tag": "0013_cargos-administrador",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1791923440183,
+      "tag": "0014_baselines-areas",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1791927793332,
+      "tag": "0015_empleado-baja",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1791932205793,
+      "tag": "0016_calendario-y-leads",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1792084905415,
+      "tag": "0017_agencia-pagos-redes-legacy",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1792086691464,
+      "tag": "0018_pagos-por-nivel",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1792088092808,
+      "tag": "0019_documentos-de-pago",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1792089744168,
+      "tag": "0020_importacion-de-leads",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1792091840798,
+      "tag": "0021_importacion-eliminada",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1792093500907,
+      "tag": "0022_campos-por-area",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1792094372525,
+      "tag": "0023_campos-multi-lista",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1792095161280,
+      "tag": "0024_permisos-por-persona",
+      "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1792109220844,
+      "tag": "0025_territorios",
+      "breakpoints": true
+    },
+    {
+      "idx": 26,
+      "version": "7",
+      "when": 1792111169231,
+      "tag": "0026_cargos-areas-subareas",
+      "breakpoints": true
+    },
+    {
+      "idx": 27,
+      "version": "7",
+      "when": 1792111706810,
+      "tag": "0027_territorio-subregion",
+      "breakpoints": true
+    },
+    {
+      "idx": 28,
+      "version": "7",
+      "when": 1792112275986,
+      "tag": "0028_campos-condicionales",
+      "breakpoints": true
+    },
+    {
+      "idx": 29,
+      "version": "7",
+      "when": 1792112479968,
+      "tag": "0029_tipo-clientes-que-atiende",
+      "breakpoints": true
+    },
+    {
+      "idx": 30,
+      "version": "7",
+      "when": 1792112870271,
+      "tag": "0030_campos-filtrados",
+      "breakpoints": true
+    }
+  ]
+}

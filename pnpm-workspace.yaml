@@ -1,0 +1,13 @@
+# pnpm 11 lee su configuración desde aquí.
+
+# Dependencias con scripts de instalación que sí se permiten: esbuild (drizzle-kit, tsx) trae su
+# binario por paquete de plataforma; sharp lo usa next/image.
+allowBuilds:
+  esbuild: true
+  sharp: true
+strictDepBuilds: false
+verifyDepsBeforeRun: false
+
+
+minimumReleaseAgeExclude:
+  - lucide-react@1.56.0
